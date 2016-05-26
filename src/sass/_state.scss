@@ -6,6 +6,11 @@
     background-color: mix($sidebar-bg, $sidebar-text, 70);
     color: opacify($sidebar-text, 1);
   }
+
+  .game-item:nth-child(1) .st0 {
+    stroke: rgba(#15F2DB, 1) !important;
+    animation: stroke 3000s linear forwards;
+  }
 }
 
 .two-active {
@@ -16,6 +21,11 @@
   .shoping-list-item:nth-child(2) {
     background-color: mix($sidebar-bg, $sidebar-text, 70);
     color: opacify($sidebar-text, 1);
+  }
+
+  .game-item:nth-child(2) .st0 {
+    stroke: rgba(#15F2DB, 1) !important;
+    animation: stroke 3000s linear forwards;
   }
 }
 
@@ -28,12 +38,22 @@
     background-color: mix($sidebar-bg, $sidebar-text, 70);
     color: opacify($sidebar-text, 1);
   }
+
+  .game-item:nth-child(3) .st0 {
+    stroke: rgba(#15F2DB, 1) !important;
+    animation: stroke 3000s linear forwards;
+  }
 }
 
 .six-active {
   .shoping-list-item:nth-child(4) {
     background-color: mix($sidebar-bg, $sidebar-text, 70);
     color: opacify($sidebar-text, 1);
+  }
+
+  .game-item:nth-child(4) .st0 {
+    stroke: rgba(#15F2DB, 1) !important;
+    animation: stroke 3000s linear forwards;
   }
 }
 
