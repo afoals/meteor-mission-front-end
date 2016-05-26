@@ -1,7 +1,12 @@
 // this is triggered every time we receive a new quadrant from the server
 const onReceiveMessage = (event) => {
-  const quadrant = event.data;
-  console.log(`quadrant: '${quadrant}'`);
+  const quadrantID = event.data;
+  console.log(`quadrant: '${quadrantID}'`);
+
+  const crossed = `${quadrantID}-crossed`;
+  const active = `${quadrantID}-active`;
+  const container = 'app-container';
+
 };
 
 // receive server sent events
