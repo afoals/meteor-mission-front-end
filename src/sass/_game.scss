@@ -16,34 +16,45 @@
 
 .progress-bar {
   position: absolute;
-  width: 200px;
-  height: 100px;
-  background-color: pink;
+  width: (380px / 1.5);
+  height: (130px / 1.5);
   right: 40px;
   bottom: 40px;
 
-  .progress-1 {
-
+  #one,
+  #two,
+  #three,
+  #four {
+    opacity: 0;
+    transition: opacity .35s ease-in-out;
   }
 
-  .progress-2 {
-
+  &.one #one {
+    opacity: 1;
   }
 
-  .progress-3 {
-
+  &.two {
+    #two,
+    #one {
+      opacity: 1;
+    }
   }
 
-  .progress-4 {
-
+  &.three {
+    #three,
+    #two,
+    #one {
+      opacity: 1;
+    }
   }
 
-  .progress-5 {
-
-  }
-
-  .progress-6 {
-
+  &.four {
+    #four,
+    #three,
+    #two,
+    #one {
+      opacity: 1;
+    }
   }
 }
 
