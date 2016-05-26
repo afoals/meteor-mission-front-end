@@ -4,13 +4,60 @@
   <meta charset="utf-8">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title></title> <!-- ADD A TITLE! -->
+  <title>Meteor Mission</title> <!-- ADD A TITLE! -->
+
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <h1>Hi there!</h1>
+  <div class="app-container">
+    <div class="sidebar-container">
+      <h1 class="branding">Meteor Mission</h1>
+
+      <ul class="shoping-list">
+        <li class="shoping-list-item broccoli">
+          <img src="" class="shoping-list-item-icon">
+          <span class="shoping-list-item-name">Broccoli</span>
+        </li> <!-- ./shoping-item -->
+        <li class="shoping-list-item bread">
+          <img src="" class="shoping-list-item-icon">
+          <span class="shoping-list-item-name">Bread</span>
+        </li> <!-- ./shoping-item -->
+        <li class="shoping-list-item bacon">
+          <img src="" class="shoping-list-item-icon">
+          <span class="shoping-list-item-name">Bacon</span>
+        </li> <!-- ./shoping-item -->
+        <li class="shoping-list-item eggs">
+          <img src="" class="shoping-list-item-icon">
+          <span class="shoping-list-item-name">Eggs</span>
+        </li> <!-- ./shoping-item -->
+        <li class="shoping-list-item carrots">
+          <img src="" class="shoping-list-item-icon">
+          <span class="shoping-list-item-name">Carrots</span>
+        </li> <!-- ./shoping-item -->
+      </ul> <!-- ./shoping-list -->
+    </div> <!-- ./sidebar-container -->
+
+    <div class="game-container">
+      <span class="game-item broccoli"></span>
+      <span class="game-item bread"></span>
+      <span class="game-item bacon"></span>
+      <span class="game-item eggs"></span>
+      <span class="game-item carrots"></span>
+
+      <div class="progress-bar">
+      </div> <!-- ./progress-bar -->
+
+      <span class="background-item"></span>
+      <span class="background-item"></span>
+      <span class="background-item"></span>
+      <span class="background-item"></span>
+      <span class="background-item"></span>
+    </div> <!-- ./game-container -->
+  </div> <!-- ./app-container -->
+
 
   <script src="js/main.js"></script>
 </body>

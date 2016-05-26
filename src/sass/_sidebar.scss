@@ -1,0 +1,58 @@
+//=============================================
+// SIDEBAR
+//=============================================
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 75%;
+  left: 0;
+
+  background-color: hsl(120, 25, 20);
+  color: hsla(120, 100, 50, .8);
+  font-family: 'Ubuntu Mono', Mono;
+  padding: 0 1em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: repeating-linear-gradient(hsla(0, 0, 100,.1), hsla(0, 0, 0, 0), hsla(0, 0, 0, .2));
+    background-size: (3px, 0);
+    opacity: .5;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 96%;
+    background-color: hsla(0, 0, 0, .2);
+    z-index: 2;
+  }
+}
+
+.branding {
+  margin-top: .5em;
+}
+
+.shoping-list {
+  font-size: 1.4em;
+}
+
+.shoping-list-item {
+  margin-bottom: .75em;
+}
+
+.shoping-list-item-icon {
+
+}
+
+.shoping-list-item-name {
+
+}

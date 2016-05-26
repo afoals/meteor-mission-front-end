@@ -1,0 +1,31 @@
+//=============================================
+// VARIABLES
+//=============================================
+$paper:  white;
+$ink:    black;
+
+//=============================================
+// BASCIS
+//=============================================
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: $paper;
+  color: $ink;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.app-container {
+
+}

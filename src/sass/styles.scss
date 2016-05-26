@@ -7,34 +7,6 @@
 // define mixins & functions
 @import "_mixins.scss";
 
-//=============================================
-// VARIABLES
-//=============================================
-$paper:  white;
-$ink:    black;
-
-//=============================================
-// BASCIS
-//=============================================
-*,
-*::before,
-*:after {
-  box-sizing: border-box;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-html,
-body {
-  background-color: $paper;
-  color: $ink;
-  font-family: sans-serif;
-  line-height: 1.4;
-}
-
-//=============================================
-// STYLES
-//=============================================
+@import "_base.scss";
+@import "_game.scss";
+@import "_sidebar.scss";
