@@ -20,7 +20,12 @@ const markAsDone = () => {
   }
 };
 
-document.getElementById('Layer_2').addEventListener('click', (e) => markAsDone())
+document.getElementById('Layer_2').addEventListener('click', (e) => markAsDone());
+const gameItems = document.getElementsByClassName('game-item');
+
+gameItems.forEach((item) => {
+  item.addEventListener('click', (e) => markAsDone());
+});
 
 const onReceiveMessage = (event) => {
   const quadrantID = event.data;
