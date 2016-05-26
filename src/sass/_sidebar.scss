@@ -41,14 +41,10 @@
   letter-spacing: 1px;
   border-bottom: 2px solid $sidebar-text;
   position: relative;
+  transition: all .35s ease-in-out;
 
   &:first-child {
     border-top: 2px solid $sidebar-text;
-  }
-
-  &.active {
-    background-color: mix($sidebar-bg, $sidebar-text, 70);
-    color: opacify($sidebar-text, 1);
   }
 
   &::after {
@@ -60,10 +56,6 @@
     width: 0;
     left: 10px;
     transition: width .25s ease-in-out;
-  }
-
-  &.crossed::after {
-    width: calc(100% - 20px);
   }
 }
 

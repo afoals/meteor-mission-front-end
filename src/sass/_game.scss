@@ -16,8 +16,8 @@
 
 .progress-bar {
   position: absolute;
-  width: (380px / 1.5);
-  height: (130px / 1.5);
+  width: (380px / 1.25);
+  height: (130px / 1.25);
   right: 40px;
   bottom: 40px;
 
@@ -29,33 +29,33 @@
     transition: opacity .35s ease-in-out;
   }
 
-  &.one #one {
-    opacity: 1;
-  }
+  // &.one #one {
+  //   opacity: 1;
+  // }
 
-  &.two {
-    #two,
-    #one {
-      opacity: 1;
-    }
-  }
+  // &.two {
+  //   #two,
+  //   #one {
+  //     opacity: 1;
+  //   }
+  // }
 
-  &.three {
-    #three,
-    #two,
-    #one {
-      opacity: 1;
-    }
-  }
+  // &.three {
+  //   #three,
+  //   #two,
+  //   #one {
+  //     opacity: 1;
+  //   }
+  // }
 
-  &.four {
-    #four,
-    #three,
-    #two,
-    #one {
-      opacity: 1;
-    }
-  }
+  // &.four {
+  //   #four,
+  //   #three,
+  //   #two,
+  //   #one {
+  //     opacity: 1;
+  //   }
+  // }
 }
 
 .background-item {
