@@ -15,6 +15,8 @@ const markAsDone = () => {
     const currClass = classes[i];
     if (currClass.endsWith('active')) {
       // add
+      var crossed = currClass.split("-")[0]+"-crossed";
+      classes.add(crossed);
     }
   }
 };
