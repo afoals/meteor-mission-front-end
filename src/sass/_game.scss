@@ -15,7 +15,12 @@
 }
 
 .progress-bar {
-
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  right: 40px;
+  bottom: 40px;
 
   .progress-1 {
 
@@ -30,10 +35,6 @@
   }
 
   .progress-4 {
-
-  }
-
-  .progress-5 {
 
   }
 }

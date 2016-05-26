@@ -9,21 +9,8 @@
   left: 0;
 
   background-color: hsl(120, 25, 20);
-  color: hsla(120, 100, 50, .8);
+  color: $green-text;
   font-family: 'Ubuntu Mono', Mono;
-  padding: 0 1em;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: repeating-linear-gradient(hsla(0, 0, 100,.1), hsla(0, 0, 0, 0), hsla(0, 0, 0, .2));
-    background-size: (3px, 0);
-    opacity: .5;
-  }
 
   &:before {
     content: "";
@@ -39,14 +26,24 @@
 
 .branding {
   margin-top: .5em;
+  padding: .5em 1em;
+  letter-spacing: 2px;
 }
 
 .shoping-list {
-  font-size: 1.4em;
+
 }
 
 .shoping-list-item {
-  margin-bottom: .75em;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: .75em 1em;
+  letter-spacing: 1px;
+  border-bottom: 2px solid $green-text;
+
+  &:first-child {
+    border-top: 2px solid $green-text;
+  }
 }
 
 .shoping-list-item-icon {
