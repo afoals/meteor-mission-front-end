@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 75%;
+  width: 256px;
   left: 0;
 
   background-color: $sidebar-bg;
@@ -52,7 +52,7 @@
     content: "";
     top: calc(50% - 2px);
     height: 5px;
-    background-color: $sidebar-text;
+    background-color: opacify($sidebar-text, 1);
     width: 0;
     left: 10px;
     transition: width .25s ease-in-out;

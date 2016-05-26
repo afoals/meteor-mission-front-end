@@ -5,10 +5,11 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 25%;
+  width: 768px;
   right: 0;
-  // background-color: $game-bg;
   background-image: url('../img/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .game-item {
