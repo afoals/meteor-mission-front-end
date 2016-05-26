@@ -36,5 +36,5 @@ const onReceiveMessage = (event) => {
 };
 
 // receive server sent events
-const source = new EventSource('//localhost:3000/connect');
+const source = new EventSource('//meteor-app-hack.herokuapp.com/connect');
 source.addEventListener('message', onReceiveMessage);
