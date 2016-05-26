@@ -6,13 +6,18 @@ var gulp = require('gulp'),
     connectLivereload = require('connect-livereload'),
     gulpLivereload = require('gulp-livereload'),
     sass = require('gulp-sass'),
+    babelify = require('babelify'),
+    browserify = require('browserify'),
+    tap = require('gulp-tap'),
+    buffer = require('gulp-buffer'),
+    sourcemaps = require('gulp-sourcemaps'),
     prefix = require('gulp-autoprefixer'),
     jshint = require('gulp-jshint');
 
 var path = {
    src: 'src/',
   html: 'src/**/*.html',
-    js: 'src/js/*.js',
+    js: 'src/js/**/*.js',
   sass: 'src/sass/**/*.scss',
    css: 'src/css/',
 }
@@ -41,11 +46,18 @@ gulp.task('sass', function(){
     .pipe(gulpLivereload());
 })
 
-gulp.task('jshint', function(){
-  gulp.src(path.js)
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
-    .pipe(gulpLivereload());
+gulp.task('jshint', function() {
+  gulp.src(path.js, { read: false })
+  .pipe(tap(function(file) {
+    file.contents = browserify(file.path, {
+      debug: true,
+      transform: [ babelify ]
+    }).bundle()
+  }))
+  .pipe(buffer())
+  .pipe(sourcemaps.init({ loadMaps: true }))
+  .pipe(gulp.dest('src/dist'))
+  .pipe(gulpLivereload());
 });
 
 gulp.task('html', function(){
