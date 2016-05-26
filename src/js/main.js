@@ -14,12 +14,13 @@ const markAsDone = () => {
   for (let i = 0; i < classes.length; i++) {
     const currClass = classes[i];
     if (currClass.endsWith('active')) {
-      // add
-      var crossed = currClass.split("-")[0]+"-crossed";
-      classes.add(crossed);
+      appContainer.classList.add(currClass.replace('active', 'crossed'));
+      return;
     }
   }
 };
+
+document.getElementById('Layer_2').addEventListener('click', (e) => markAsDone())
 
 const onReceiveMessage = (event) => {
   const quadrantID = event.data;
