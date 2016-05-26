@@ -5,22 +5,62 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 25%;
+  width: 768px;
   right: 0;
-  // background-color: $game-bg;
   background-image: url('../img/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: -100000;
+  }
 }
 
 .game-item {
+  width: 148px;
+  height: 148px;
+  display: block;
+  position: absolute;
 
+  .st0 {
+    transition: stroke .5s;
+    stroke: rgba(#15F2DB, 0) !important;
+    // animation: stroke 1000s linear forwards;
+  }
+
+  &:nth-child(1) {
+    left: 131px;
+    top: 151px;
+  }
+
+  &:nth-child(2) {
+    left: 489px;
+    top: 189px;
+  }
+
+  &:nth-child(3) {
+    left: 332px;
+    top: 500px;
+  }
+
+  &:nth-child(4) {
+    left: 120px;
+    top: 389px;
+  }
 }
 
 .progress-bar {
   position: absolute;
   width: (380px / 1.25);
   height: (130px / 1.25);
-  right: 40px;
-  bottom: 40px;
+  right: 20px;
+  bottom: 20px;
+
+  #background {
+    opacity: .75;
+  }
 
   #one,
   #two,
@@ -29,34 +69,6 @@
     opacity: 0;
     transition: opacity .35s ease-in-out;
   }
-
-  // &.one #one {
-  //   opacity: 1;
-  // }
-
-  // &.two {
-  //   #two,
-  //   #one {
-  //     opacity: 1;
-  //   }
-  // }
-
-  // &.three {
-  //   #three,
-  //   #two,
-  //   #one {
-  //     opacity: 1;
-  //   }
-  // }
-
-  // &.four {
-  //   #four,
-  //   #three,
-  //   #two,
-  //   #one {
-  //     opacity: 1;
-  //   }
-  // }
 }
 
 .background-item {
