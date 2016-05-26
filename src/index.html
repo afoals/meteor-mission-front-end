@@ -485,10 +485,15 @@
       </div> <!-- ./progress-bar -->
     </div> <!-- ./game-container -->
 
-    <div class="spash closed"></div>
+    <div class="splash" id="splash"></div>
     <div class="finale closed"></div>
   </div> <!-- ./app-container -->
 
+  <script type="text/javascript">
+    document.getElementById('splash').addEventListener('click', function () {
+      this.classList.add('closed');
+    });
+  </script>
 
   <script src="dist/main.js"></script>
 </body>
